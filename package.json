@@ -1,5 +1,5 @@
 {
-  "name": "@rit3zh/spotify.ts",
+  "name": "spotify-ts-wrapper",
   "version": "1.0.1",
   "main": "./dist/index.js",
   "license": "MIT",
