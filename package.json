@@ -1,8 +1,12 @@
 {
-  "name": "spotify-node-ts",
+  "name": "@rit3zh/spotify.ts",
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "MIT",
+  "types": "./dist/Interfaces/index",
+  "repository": {
+    "url": "https://github.com/rit3zh/spotify.ts"
+  },
   "scripts": {
     "build:dev": "nodemon dist/index.js",
     "watch": "tsx watch src/index.ts",
