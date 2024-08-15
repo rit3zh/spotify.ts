@@ -20,4 +20,4 @@ This project is licensed under the [MIT License](https://github.com/rit3zh/spoti
 
 ## Links
 
-- [Github]()
+- [Github](https://github.com/rit3zh/spotify.ts)
