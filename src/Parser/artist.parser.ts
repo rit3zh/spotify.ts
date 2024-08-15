@@ -1,5 +1,5 @@
-import { extractSpotifyID } from "@/Utils/getSpotifyId";
-import type { Artist } from "@/Interfaces/Artist";
+import { extractSpotifyID } from "../Utils/getSpotifyId";
+import type { Artist } from "../Interfaces/Artist";
 export function artistParser(body: any): Artist {
   const { data } = body;
   const artist = data?.artistUnion;

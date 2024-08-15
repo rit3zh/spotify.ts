@@ -1,13 +1,13 @@
-import { client } from "@/Structure/RequestClient";
+import { client } from "../Structure/RequestClient";
 import {
   createSpotifyAlbumParams,
   fixDoubleEncodedUrl,
   getSpotifyURL,
-} from "@/Modifiers/url+modifiers";
-import { createSpotifySearchAllParams } from "@/Modifiers/url+modifiers";
-import { createSpotifyAuthorizationContext } from "@/Structure/Context";
-import { searchParser } from "@/Parser/search.parser";
-import { Search } from "@/Interfaces/Search";
+} from "../Modifiers/url+modifiers";
+import { createSpotifySearchAllParams } from "../Modifiers/url+modifiers";
+import { createSpotifyAuthorizationContext } from "../Structure/Context";
+import { searchParser } from "../Parser/search.parser";
+import { Search } from "../Interfaces/Search";
 interface PagePagination {
   offSet?: number;
   limit?: number;

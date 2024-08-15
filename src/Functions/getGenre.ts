@@ -1,12 +1,12 @@
-import { createSpotifyAuthorizationContext } from "@/Structure/Context";
-import { client } from "@/Structure/RequestClient";
+import { createSpotifyAuthorizationContext } from "../Structure/Context";
+import { client } from "../Structure/RequestClient";
 import {
   createSpotifyParams,
   fixDoubleEncodedUrl,
   getSpotifyURL,
-} from "@/Modifiers/url+modifiers";
-import { genreParser } from "@/Parser/genre.parser";
-import type { Genre } from "@/Interfaces/Genres";
+} from "../Modifiers/url+modifiers";
+import { genreParser } from "../Parser/genre.parser";
+import type { Genre } from "../Interfaces/Genres";
 
 interface PagePagination {
   offSet?: number;

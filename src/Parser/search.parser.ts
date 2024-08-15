@@ -1,5 +1,5 @@
-import { Search } from "@/Interfaces/Search";
-import { extractSpotifyID } from "@/Utils/getSpotifyId";
+import { Search } from "../Interfaces/Search";
+import { extractSpotifyID } from "../Utils/getSpotifyId";
 
 export function searchParser(body: any): Search {
   const { data } = body;

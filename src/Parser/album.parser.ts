@@ -1,5 +1,5 @@
-import { extractSpotifyID } from "@/Utils/getSpotifyId";
-import type { Album } from "@/Interfaces/Album";
+import { extractSpotifyID } from "../Utils/getSpotifyId";
+import type { Album } from "../Interfaces/Album";
 export function albumParser(body: any): Album {
   const { data } = body;
   const album = data?.albumUnion;

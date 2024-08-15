@@ -1,5 +1,5 @@
-import { User } from "@/Interfaces/User";
-import { extractSpotifyID } from "@/Utils/getSpotifyId";
+import { User } from "../Interfaces/User";
+import { extractSpotifyID } from "../Utils/getSpotifyId";
 
 export function parseUser(body: any): User {
   const user = body;

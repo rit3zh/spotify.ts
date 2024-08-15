@@ -1,8 +1,8 @@
-import { createSpotifyAuthorizationContext } from "@/Structure/Context";
-import { client } from "@/Structure/RequestClient";
+import { createSpotifyAuthorizationContext } from "../Structure/Context";
+import { client } from "../Structure/RequestClient";
 
-import { parseUser } from "@/Parser/user.parser";
-import { User } from "@/Interfaces/User";
+import { parseUser } from "../Parser/user.parser";
+import { User } from "../Interfaces/User";
 
 interface PaginationOptions {
   playlistLimit?: number;

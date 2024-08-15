@@ -1,5 +1,5 @@
-import { extractSpotifyID } from "@/Utils/getSpotifyId";
-import type { Genre } from "@/Interfaces/Genres";
+import { extractSpotifyID } from "../Utils/getSpotifyId";
+import type { Genre } from "../Interfaces/Genres";
 
 export function genreParser<T>(body: any): Genre {
   const { data } = body;

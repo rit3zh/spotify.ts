@@ -1,2 +1,2 @@
-export type * from "@/Interfaces/index";
-export * from "@/Functions/index";
+export type * from "./Interfaces/index";
+export * from "./Functions/index";

@@ -1,5 +1,5 @@
-import { extractSpotifyID } from "@/Utils/getSpotifyId";
-import type { Playlist } from "@/Interfaces/Playlist";
+import { extractSpotifyID } from "../Utils/getSpotifyId";
+import type { Playlist } from "../Interfaces/Playlist";
 export function playlistParser(body: any): Playlist {
   const { data } = body;
   const playlistV2 = data?.playlistV2;

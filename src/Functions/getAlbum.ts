@@ -1,12 +1,12 @@
-import { createSpotifyAuthorizationContext } from "@/Structure/Context";
-import { client } from "@/Structure/RequestClient";
+import { createSpotifyAuthorizationContext } from "../Structure/Context";
+import { client } from "../Structure/RequestClient";
 import {
   createSpotifyAlbumParams,
   fixDoubleEncodedUrl,
   getSpotifyURL,
-} from "@/Modifiers/url+modifiers";
-import { albumParser } from "@/Parser/album.parser";
-import { Album } from "@/Interfaces/Album";
+} from "../Modifiers/url+modifiers";
+import { albumParser } from "../Parser/album.parser";
+import { Album } from "../Interfaces/Album";
 
 interface PagePagination {
   offSet?: number;

@@ -1,5 +1,5 @@
-import { extractSpotifyID } from "@/Utils/getSpotifyId";
-import type { Sections } from "@/Interfaces/Sections";
+import { extractSpotifyID } from "../Utils/getSpotifyId";
+import type { Sections } from "../Interfaces/Sections";
 export function sectionParser(body: any): Sections {
   const { data } = body;
   const browseSection = data?.browseSection;
