@@ -1,17 +1,17 @@
-## @rit3zh/spotify.ts
+## spotify-ts-wrapper
 
 Spotify TypeScript wrapper.
 
 ## Installation
 
 ```bash
-yarn add @rit3zh/spotify.ts
+yarn add spotify-ts-wrapper
 ```
 
 ## Usage
 
 ```ts
-import * as Spotify from "@rit3zh/spotify.ts"; // importing everything
+import * as Spotify from "spotify-ts-wrapper"; // importing everything
 ```
 
 ## License
