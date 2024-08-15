@@ -1,9 +1,8 @@
 {
   "name": "spotify-ts-wrapper",
   "version": "1.0.1",
-  "main": "./dist/index.js",
+  "main": "dist/index",
   "license": "MIT",
-  "types": "./dist/Interfaces/index",
   "repository": {
     "url": "https://github.com/rit3zh/spotify.ts"
   },
