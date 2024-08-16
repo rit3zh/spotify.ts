@@ -1,12 +1,12 @@
-import { PodcastShow } from "@/Interfaces/Show";
+import { PodcastShow } from "../Interfaces/Show";
 import {
   createSpotifyShowParams,
   fixDoubleEncodedUrl,
   getSpotifyURL,
-} from "@/Modifiers/url+modifiers";
-import { parsePodcastShow } from "@/Parser/show.parser";
-import { createSpotifyAuthorizationContext } from "@/Structure/Context";
-import { client } from "@/Structure/RequestClient";
+} from "../Modifiers/url+modifiers";
+import { parsePodcastShow } from "../Parser/show.parser";
+import { createSpotifyAuthorizationContext } from "../Structure/Context";
+import { client } from "../Structure/RequestClient";
 
 interface PagePagination {
   offSet?: number;
