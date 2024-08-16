@@ -1,4 +1,4 @@
-import { PodcastShow } from "@/Interfaces/Show";
+import { PodcastShow } from "../Interfaces/Show";
 
 export function parsePodcastShow(body: any): PodcastShow {
   const { data } = body;
