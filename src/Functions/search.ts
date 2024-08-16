@@ -16,12 +16,9 @@ interface IOptions {
   query: string;
   pagePagination?: PagePagination;
   topResults?: number;
-  filter?: "songs" | "albums" | "artists" | "playlists";
 }
 
-export async function search<T extends IOptions>(
-  options: IOptions
-): Promise<Search> {
+export async function search<T extends IOptions>(options: T): Promise<Search> {
   const token = await client.getAccessToken();
   const context = createSpotifyAuthorizationContext(token);
   const params = createSpotifySearchAllParams({

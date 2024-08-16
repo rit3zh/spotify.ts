@@ -211,3 +211,35 @@ export function createParamsFromURL(url: string): Record<string, string> {
 
   return params;
 }
+
+export function createSpotifyShowParams(params: any) {
+  return {
+    operationName: "queryPodcastEpisodes",
+    variables: {
+      uri: `spotify:show:${params.id}`,
+      offset: params.offSet,
+      limit: params.limit,
+    },
+    extensions: {
+      persistedQuery: {
+        version: 1,
+        sha256Hash:
+          "108deda91e2701403d95dc39bdade6741c2331be85737b804a00de22cc0acabf",
+      },
+    },
+  };
+}
+
+export function createSpotifyPodcastParams(params: any) {
+  return {
+    operationName: "queryShowMetadataV2",
+    variables: { uri: `spotify:show:${params.id}` },
+    extensions: {
+      persistedQuery: {
+        version: 1,
+        sha256Hash:
+          "5fb034a236a3e8301e9eca0e23def3341ed66c891ea2d4fea374c091dc4b4a6a",
+      },
+    },
+  };
+}

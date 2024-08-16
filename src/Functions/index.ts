@@ -5,3 +5,5 @@ export * from "./getPlaylist";
 export * from "./getSections";
 export * from "./search";
 export * from "./getUser";
+export * from "./getPodcast";
+export * from "./getPodcastShow"

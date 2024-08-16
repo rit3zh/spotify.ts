@@ -8,6 +8,13 @@ Spotify TypeScript wrapper.
 yarn add spotify-ts-wrapper
 ```
 
+## Change Log
+
+### [1.0.4] - 2024-08-18
+
+- Added `getPodcast` & `getPodcastShow` functions.
+- Added Interfaces for `getPodcast` & `getPodcastShow`
+
 ## Usage
 
 ```ts

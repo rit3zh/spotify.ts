@@ -8,6 +8,7 @@ export interface Playlist {
   description?: string;
   items?: PlaylistItems[];
   owner?: PlaylistOwner;
+  headerImage?: string;
 }
 
 export interface PlaylistOwner {

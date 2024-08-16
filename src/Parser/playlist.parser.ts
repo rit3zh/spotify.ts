@@ -1,5 +1,6 @@
 import { extractSpotifyID } from "../Utils/getSpotifyId";
 import type { Playlist } from "../Interfaces/Playlist";
+import { fetchPlaylistAttributes } from "@/Helpers/fetchAttributes";
 export function playlistParser(body: any): Playlist {
   const { data } = body;
   const playlistV2 = data?.playlistV2;
@@ -18,6 +19,8 @@ export function playlistParser(body: any): Playlist {
   const format = playlistV2?.format;
   const title = playlistV2?.name;
   const id = extractSpotifyID(playlistV2?.uri);
+  const headerImage = fetchPlaylistAttributes(playlistV2?.attributes) ?? "";
+
   const items = playlistV2?.content?.items?.map((item: any) => {
     const content = item?.itemV2?.data;
     if (!content?.uri) return;
@@ -30,6 +33,7 @@ export function playlistParser(body: any): Playlist {
     }));
     const duration = content?.trackDuration?.totalMilliseconds;
     const id = extractSpotifyID(content?.uri);
+    const attr = content;
 
     const album = {
       name: content?.albumOfTrack?.name,
@@ -60,5 +64,6 @@ export function playlistParser(body: any): Playlist {
     permission,
     description,
     items,
+    headerImage,
   };
 }
