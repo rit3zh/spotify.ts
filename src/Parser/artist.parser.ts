@@ -27,13 +27,18 @@ export function artistParser(body: any): Artist {
   const gallery = visuals?.gallery?.items[0]?.sources?.map(
     (image: any) => image.url
   );
-
   const pinned = {
     name: pins?.name,
     type: pins?.__typename,
-    artwork: pins?.coverArt?.sources?.at(-1)?.url,
-    id: extractSpotifyID(pins?.uri),
+    artwork:
+      pins?.__typename === "Playlist"
+        ? pins?.images?.items[0].sources?.at(-1)?.url
+        : pins?.__typename === "Album"
+        ? pins?.coverArt?.sources?.at(-1)?.url
+        : "",
+    id: extractSpotifyID(pins?.uri || "") ?? "",
   };
+
   const playlist = profile?.playlistsV2?.items?.map((item: any) => {
     const data = item?.data;
     const type = data?.__typename;

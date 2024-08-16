@@ -1,5 +1,5 @@
-import { Podcast } from "@/Interfaces/Podcast";
-import { extractSpotifyID } from "@/Utils/getSpotifyId";
+import { Podcast } from "../Interfaces/Podcast";
+import { extractSpotifyID } from "../Utils/getSpotifyId";
 
 export function parsePodcast(body: any): Podcast {
   const { data } = body;

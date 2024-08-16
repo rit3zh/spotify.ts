@@ -33,7 +33,6 @@ export function playlistParser(body: any): Playlist {
     }));
     const duration = content?.trackDuration?.totalMilliseconds;
     const id = extractSpotifyID(content?.uri);
-    const attr = content;
 
     const album = {
       name: content?.albumOfTrack?.name,
